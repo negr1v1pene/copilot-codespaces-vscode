@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Basket</title>
+    <link rel="stylesheet" href="basket.css">
+</head>
+<body>
+    <header>
+        <a href="login.html">Login</a>
+        <a href="registration.html">Registration</a>
+    </header>
+    <div class="container">
+        <h1>Shopping Basket</h1>
+        
+        <div class="product">
+            <h3>Product 1</h3>
+            <p>$10.00</p>
+            <button class="add-to-cart" data-name="Product 1" data-price="10.00">Add to Basket</button>
+        </div>
+
+        <div class="product">
+            <h3>Product 2</h3>
+            <p>$15.00</p>
+            <button class="add-to-cart" data-name="Product 2" data-price="15.00">Add to Basket</button>
+        </div>
+
+        <div class="product">
+            <h3>Product 3</h3>
+            <p>$20.00</p>
+            <button class="add-to-cart" data-name="Product 3" data-price="20.00">Add to Basket</button>
+        </div>
+
+        <h2>Your Basket</h2>
+        <div id="basket">
+            <p>Your basket is empty</p>
+        </div>
+
+        <div id="total">
+            <p>Total: $<span id="total-amount">0.00</span></p>
+        </div>
+    </div>
+
+    <script src="basket.js"></script>
+</body>
+</html>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+header {
+  position: relative;
+  top: -45%;
+  left: 30%;
+}
+a {
+  color: darkcyan;
+  text-decoration: none;
+  text-align: center;
+}
+.container {
+  width: 80%;
+  max-width: 800px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.product {
+  margin: 20px 0;
+}
+
+.product button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.product button:hover {
+  background-color: #218838;
+}
+
+#basket {
+  margin-top: 20px;
+  border-top: 2px solid #ddd;
+  padding-top: 10px;
+}
+
+#total {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.basket-item {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.basket-item button {
+  background-color: #dc3545;
+}
+
+.basket-item button:hover {
+  background-color: #c82333;
+}
