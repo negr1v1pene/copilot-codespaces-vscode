@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Basket</title>
+    <link rel="stylesheet" href="basket.css">
+</head>
+<body>
+    <header>
+        <a href="login.html">Login</a>
+        <a href="registration.html">Registration</a>
+    </header>
+    <div class="container">
+        <h1>Shopping Basket</h1>
+        
+        <div class="product">
+            <h3>Product 1</h3>
+            <p>$10.00</p>
+            <button class="add-to-cart" data-name="Product 1" data-price="10.00">Add to Basket</button>
+        </div>
+
+        <div class="product">
+            <h3>Product 2</h3>
+            <p>$15.00</p>
+            <button class="add-to-cart" data-name="Product 2" data-price="15.00">Add to Basket</button>
+        </div>
+
+        <div class="product">
+            <h3>Product 3</h3>
+            <p>$20.00</p>
+            <button class="add-to-cart" data-name="Product 3" data-price="20.00">Add to Basket</button>
+        </div>
+
+        <h2>Your Basket</h2>
+        <div id="basket">
+            <p>Your basket is empty</p>
+        </div>
+
+        <div id="total">
+            <p>Total: $<span id="total-amount">0.00</span></p>
+        </div>
+    </div>
+
+    <script src="basket.js"></script>
+</body>
+</html>
